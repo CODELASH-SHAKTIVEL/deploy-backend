@@ -5,7 +5,7 @@ const http = require('http')
 const socketIO = require('socket.io');
 const { Socket } = require("dgram");
 
-const port =  process.env.PORT || 4100  ;
+const PORT =  process.env.PORT || 4100  ;
 
 
 //important to do create a server and connect to socket.IO
@@ -47,6 +47,6 @@ app.get('/', (req , res)=>{
 })
 
 
-server.listen(port , ()=>{
+server.listen(PORT , ()=>{
     console.log("listening on port " + port);
 })
